@@ -754,4 +754,54 @@ html {
 .profile-pic:hover {
     transform: scale(1.08) rotate(-2deg);
     box-shadow: 0 8px 32px rgba(251, 191, 36, 0.3), 0 4px 16px rgba(0,0,0,0.12);
+}
+
+.large-hero {
+    display: flex;
+    align-items: stretch;
+    gap: 0;
+    min-height: 70vh;
+    background: none;
+}
+.large-hero-image {
+    flex: 1 1 50%;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    overflow: hidden;
+    min-width: 0;
+}
+.profile-pic-large {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+    box-shadow: none;
+    min-height: 350px;
+    max-height: 600px;
+    display: block;
+}
+.large-hero .hero-content {
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem 2rem;
+    background: rgba(255,255,255,0.92);
+    box-shadow: 0 0 32px rgba(0,0,0,0.04);
+    min-width: 0;
+}
+@media (max-width: 900px) {
+    .large-hero {
+        flex-direction: column;
+    }
+    .large-hero-image, .large-hero .hero-content {
+        flex: unset;
+        max-width: 100%;
+        padding: 1.5rem 1rem;
+    }
+    .profile-pic-large {
+        min-height: 200px;
+        max-height: 300px;
+    }
 } 
