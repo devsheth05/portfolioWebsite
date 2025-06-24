@@ -333,7 +333,7 @@ section {
 
 .about-text p {
     margin-bottom: 1.5rem;
-    color: #6b7280;
+    color: #000000;
     line-height: 1.8;
 }
 
@@ -569,11 +569,19 @@ section {
     background: white;
     border-radius: 10px;
     transition: all 0.3s ease;
+    cursor: pointer;
+    text-decoration: none !important;
+}
+
+.contact-method a, .contact-method a:visited, .contact-method a:active {
+    text-decoration: none !important;
+    color: inherit;
 }
 
 .contact-method:hover {
     transform: translateX(10px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    background: #eaf6fb;
 }
 
 .contact-method i {
