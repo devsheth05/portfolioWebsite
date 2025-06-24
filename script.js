@@ -436,4 +436,26 @@ loadingStyle.textContent = `
         opacity: 1;
     }
 `;
-document.head.appendChild(loadingStyle); 
+document.head.appendChild(loadingStyle);
+
+// Scroll to About section when profile picture is clicked
+const profilePic = document.querySelector('.profile-pic');
+if (profilePic) {
+    profilePic.addEventListener('click', function() {
+        const aboutSection = document.getElementById('about');
+        if (aboutSection) {
+            aboutSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    });
+}
+
+// Scroll to About section when hero arrow is clicked
+const scrollArrow = document.querySelector('.scroll-arrow');
+if (scrollArrow) {
+    scrollArrow.addEventListener('click', function() {
+        const aboutSection = document.getElementById('about');
+        if (aboutSection) {
+            aboutSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    });
+} 
