@@ -28,6 +28,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    text-align: center;
 }
 
 /* Navigation */
@@ -323,6 +324,7 @@ section {
     grid-template-columns: 2fr 1fr;
     gap: 4rem;
     align-items: start;
+    text-align: center;
 }
 
 .about-text h3 {
@@ -342,14 +344,16 @@ section {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 1rem;
     margin-top: 1.5rem;
+    text-align: center;
 }
 
 .interest-item {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 0.5rem;
     padding: 1rem;
-    background: #d8fafc;
+    background: #f8fafc;
     border-radius: 8px;
     transition: all 0.3s ease;
 }
@@ -392,10 +396,15 @@ section {
 .experience {
     background: linear-gradient(900deg, #b2e1e5, #77dbb3);
 }
+
+.experience-item {
+    margin-bottom: 3rem;
+}
+
 /* Projects Section */
 .projects {
     background: linear-gradient(900deg, #77dbb3, #d68eeb);
-
+    text-align: center;
 }
 
 .projects-grid {
@@ -485,12 +494,14 @@ section {
 /* Skills Section */
 .skills {
     background: linear-gradient(900deg, #d68eeb, #b2e1e5);
+    text-align: center;
 }
 
 .skills-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 3rem;
+    text-align: center;
 }
 
 .skills-category h3 {
@@ -535,12 +546,14 @@ section {
 /* Contact Section */
 .contact {
     background: linear-gradient(900deg, #b2e1e5, #77dbb3);
+    text-align: center;
 }
 
 .contact-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
+    text-align: center;
 }
 
 .contact-info h3 {
@@ -786,4 +799,8 @@ html {
 .profile-pic:hover {
     transform: scale(1.05) rotate(-1deg);
     box-shadow: 0 8px 32px rgba(251, 191, 36, 0.22), 0 4px 16px rgba(0,0,0,0.14);
+}
+
+.experience-content {
+    text-align: center;
 } 
