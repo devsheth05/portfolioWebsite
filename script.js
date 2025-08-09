@@ -27,15 +27,74 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Navbar background change on scroll
-window.addEventListener('scroll', () => {
+// Navbar background change on scroll (class-based for theme awareness)
+function updateNavbarScrolled() {
     const navbar = document.querySelector('.navbar');
+    if (!navbar) return;
     if (window.scrollY > 100) {
-        navbar.style.background = 'rgba(255, 255, 255, 0.98)';
-        navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
+        navbar.classList.add('scrolled');
     } else {
-        navbar.style.background = 'rgba(255, 255, 255, 0.95)';
-        navbar.style.boxShadow = 'none';
+        navbar.classList.remove('scrolled');
+    }
+}
+
+window.addEventListener('scroll', updateNavbarScrolled);
+document.addEventListener('DOMContentLoaded', updateNavbarScrolled);
+
+// Theme toggle (light/dark) with persistence
+function applyTheme(theme) {
+    const root = document.documentElement;
+    const themeToggleBtn = document.querySelector('.theme-toggle');
+    if (theme === 'dark') {
+        root.classList.add('dark');
+    } else {
+        root.classList.remove('dark');
+    }
+    if (themeToggleBtn) {
+        const icon = themeToggleBtn.querySelector('i');
+        if (icon) {
+            if (root.classList.contains('dark')) {
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+                themeToggleBtn.setAttribute('aria-pressed', 'true');
+                themeToggleBtn.setAttribute('title', 'Switch to light mode');
+            } else {
+                icon.classList.remove('fa-sun');
+                icon.classList.add('fa-moon');
+                themeToggleBtn.setAttribute('aria-pressed', 'false');
+                themeToggleBtn.setAttribute('title', 'Switch to dark mode');
+            }
+        }
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const stored = localStorage.getItem('theme');
+    const initialTheme = stored === 'dark' || stored === 'light' ? stored : (prefersDark ? 'dark' : 'light');
+    applyTheme(initialTheme);
+
+    const themeToggleBtn = document.querySelector('.theme-toggle');
+    if (themeToggleBtn) {
+        themeToggleBtn.addEventListener('click', () => {
+            const isDark = document.documentElement.classList.contains('dark');
+            const next = isDark ? 'light' : 'dark';
+            applyTheme(next);
+            localStorage.setItem('theme', next);
+        });
+    }
+
+    // If user hasn't set a preference, react to OS changes
+    if (!stored && window.matchMedia) {
+        const media = window.matchMedia('(prefers-color-scheme: dark)');
+        const handleChange = (e) => {
+            applyTheme(e.matches ? 'dark' : 'light');
+        };
+        if (typeof media.addEventListener === 'function') {
+            media.addEventListener('change', handleChange);
+        } else if (typeof media.addListener === 'function') {
+            media.addListener(handleChange);
+        }
     }
 });
 

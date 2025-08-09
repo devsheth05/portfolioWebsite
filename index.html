@@ -23,6 +23,9 @@
                     <a href="#about" class="nav-link">About</a>
                 </li>
                 <li class="nav-item">
+                    <a href="#education" class="nav-link">Education</a>
+                </li>
+                <li class="nav-item">
                     <a href="#projects" class="nav-link">Projects</a>
                 </li>
                 <li class="nav-item">
@@ -32,6 +35,9 @@
                     <a href="#contact" class="nav-link">Contact</a>
                 </li>
             </ul>
+            <button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode" type="button">
+                <i class="fas fa-moon" aria-hidden="true"></i>
+            </button>
             <div class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -60,7 +66,7 @@
             <div class="hero-image">
                 <div class="profile-card">
                     <div class="profile-avatar">
-                        <img src="images\profile_1.jpeg" class="profile-pic" />
+                        <img src="images\profile_1.jpeg" class="profile-pic" alt="Profile picture of Dev Sheth" />
                     </div>
                     <div class="profile-info">
                         <h3>Me</h3>
@@ -126,66 +132,81 @@
         </div>
     </section>
 
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="education-content">
+                <div class="education-item">
+                    <h3>University of Texas at Dallas</h3>
+                    <p>Richardson, TX</p>
+                    <p>Bachelor of Science in Computer Science</p>
+                    <p>Minor: Business Analytics and Artificial Intelligence</p>
+                    <span class="education-date">May 2027</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Experience Section -->
     <section id="experience" class="experience">
         <div class="container">
             <h2 class="section-title">Experience</h2>
-            <div class="experience-content">
-                <div class="experience-item">
-                    <h3>Software Engineering Intern</h3>
-                    <h4>Fidelity Investments</h4>
-                    <span class="experience-date">June 2025 - Present</span>
-                    <p class="experience-details">
-                        As a Software Engineering Intern at Fidelity Investments, I worked on improving a critical internal backend service used by developers across the company to access over a thousand configuration files. My main focus was on updating <b>AWS Lambda functions</b> to pull data from Fidelity's internal configuration system, which enabled seamless usage for development teams internationally. I also leveraged <b>Docker and AWS CLI</b> to test and deploy these services, streamlining the deployment process and saving teams significant time each quarter. Throughout my internship, I collaborated with multiple teams in <b>Agile sprints and stand-ups</b>, ensuring smooth delivery and learning the importance of <b>communication and teamwork</b> in a large-scale engineering environment.
-                    </p>
-                </div>
-                <div class="experience-item">
-                    <h3>Member</h3>
-                    <h4>UI/UX Design Club</h4>
-                    <span class="experience-date">Feb 2024 - Present</span>
-                    <p class="experience-details">
-                        As a member of the UI/UX Design Club, I collaborated with like-minded individuals who share a deep passion for user interface and user experience design. I gained hands-on experience with <b>Figma</b>, creating mockups to aid in UI/UX design and front-end development. I also worked with popular frameworks like <b>Bootstrap, Tailwind CSS, and Bulma</b>, which helped me improve my design skills and deliver better project results.
-                    </p>
-                </div>
-                <div class="experience-item">
-                    <h3>Brother, Tech Cohort Member, Brotherhood Chair</h3>
-                    <h4>Alpha Kappa Psi</h4>
-                    <span class="experience-date">Nov 2023 - Present</span>
-                    <p class="experience-details">
-                        As a member of Alpha Kappa Psi, I developed essential <b>soft skills</b> through the 8-week pledge process, enhancing my <b>teamwork, leadership, and communication</b> abilities. I organized an official <b>Hackathon partnered with FinTech</b>, successfully bringing together over 100 participants. This experience taught me the importance of <b>event planning, collaboration, and fostering community engagement</b> in professional settings.
-                    </p>
-                </div>
-                <div class="experience-item">
-                    <h3>Member/Mentee</h3>
-                    <h4>ACM UTD</h4>
-                    <span class="experience-date">Sep 2023 - Present</span>
-                    <p class="experience-details">
-                        Through ACM UTD's structured <b>mentorship program</b>, I completed over 20 Udemy lessons in <b>SQL, Python, and front-end design</b>, gaining foundational knowledge in <b>cloud computing, web development, and AI</b> under expert guidance. I attended 3 hackathons and over 15 workshops on <b>machine learning and UI/UX</b>, leveraging ACM's community of 100+ people to connect with professionals and gain insights into current tech trends. This experience has been instrumental in my <b>technical growth and professional networking</b>.
-                    </p>
-                </div>
-                <div class="experience-item">
-                    <h3>Swim Instructor</h3>
-                    <h4>Lifetime Fitness</h4>
-                    <span class="experience-date">Jun 2023 - Aug 2023</span>
-                    <p class="experience-details">
-                        As a Swim Instructor at Lifetime Fitness, I instructed young swimmers in water safety and swimming techniques, fostering confidence and skill development while teaching them how to work effectively with others. I addressed members' needs and requirements promptly, enhancing their overall gym experience. This role developed my <b>patience, communication skills, and ability to work with diverse age groups</b>.
-                    </p>
-                </div>
-                <div class="experience-item">
-                    <h3>Member/Volunteer</h3>
-                    <h4>The Miracle League of Dallas</h4>
-                    <span class="experience-date">Sep 2022 - May 2023</span>
-                    <p class="experience-details">
-                        At The Miracle League of Dallas, I engaged in sports activities with children, actively boosting their self-esteem and promoting <b>inclusivity</b>. This experience deepened my understanding of diverse backgrounds and strengthened my ability to connect with individuals from various walks of life. I witnessed firsthand the positive physical and emotional growth of children with special needs through their participation in sports, which was incredibly rewarding and taught me the importance of <b>empathy and inclusion</b>.
-                    </p>
-                </div>
-                <div class="experience-item">
-                    <h3>South Local Representative</h3>
-                    <h4>Young Jains of America</h4>
-                    <span class="experience-date">Mar 2019 - Present</span>
-                    <p class="experience-details">
-                        As South Local Representative for Young Jains of America, I organized 3 national retreats and conventions, fostering unity among 900+ Jains and culminating in successful nationwide gatherings. This long-term commitment has strengthened my personal spiritual connection and built lasting relationships with like-minded people across the nation. This role has developed my <b>organizational skills, leadership abilities, and cultural awareness</b>.
-                    </p>
+            <div class="experience-content timeline">
+                <div class="experience-item timeline-item fade-in-up">
+                    <div class="timeline-card">
+                        <div class="experience-header">
+                            <div class="experience-title">
+                                <span class="company-badge">Fidelity Investments</span>
+                                <h3>Software Engineering Intern</h3>
+                            </div>
+                            <span class="experience-date">June 2025 - August 2025</span>
+                        </div>
+
+                        <div class="experience-section">
+                            <h5>Impact</h5>
+                            <p>Migrated a Node.js AWS Lambda from static configs to a centralized config store, enabling runtime config changes without redeploys and improving flexibility, maintainability, and operational efficiency.</p>
+                        </div>
+
+                        <div class="experience-section">
+                            <h5>Responsibilities</h5>
+                            <ul class="experience-lines">
+                                <li>Integrated an internal config-store module for on‑demand configuration retrieval in a production Lambda service.</li>
+                                <li>Implemented environment‑driven resolution of profile/label/keys; staged resolved configs in ephemeral storage for runtime use.</li>
+                                <li>Leveraged a known‑good reference implementation to guide architecture and close parity gaps.</li>
+                            </ul>
+                        </div>
+
+                        <div class="experience-section">
+                            <h5>CI/CD & Monitoring</h5>
+                            <ul class="experience-lines">
+                                <li>Maintained observability with Datadog metrics/logs to meet monitoring requirements and validate behavior post‑migration.</li>
+                                <li>Used Jenkins to operate Lambda pipelines end‑to‑end; integrated Terraform changes with code updates for automated deployments.</li>
+                                <li>Verified deployments across test/stage via logs, runtime configs, and system behavior checks.</li>
+                            </ul>
+                        </div>
+
+                        <div class="experience-section">
+                            <h5>Stack</h5>
+                            <div class="chip-row">
+                                <span class="chip">Node.js</span>
+                                <span class="chip">AWS Lambda</span>
+                                <span class="chip">Terraform</span>
+                                <span class="chip">Jenkins</span>
+                                <span class="chip">Datadog</span>
+                                <span class="chip">Git / GitHub Enterprise</span>
+                            </div>
+                        </div>
+
+                        <div class="experience-section">
+                            <h5>Highlights</h5>
+                            <ul class="experience-lines">
+                                <li>Learned Lambda cold starts and ephemeral storage patterns, env‑var strategies, and centralized config across environments.</li>
+                                <li>Partnered with DevOps and platform engineering to align on architecture and best practices.</li>
+                                <li>Presented outcomes to senior engineering leadership: reduced deployment time, improved reliability, fewer config errors.</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -194,27 +215,25 @@
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
+            <h2 class="section-title">Projects & Research</h2>
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-image">
                         <div class="project-placeholder">
-                            <i class="fas fa-anime"></i>
+                            <i class="fas fa-chart-line"></i>
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3>AnimeTracker</h3>
-                        <p>A passion project combining my love for anime with web development. Users can create accounts, rank their favorite anime, and post opinions on episodes and topics. Features user authentication, real-time data fetching, and a community-driven platform.</p>
+                        <h3>FinTrack (ACM Research)</h3>
+                        <p>Built and trained a hybrid <b>CNN-LSTM</b> model in <b>TensorFlow</b> to predict S&P 500 movements using minute-level stock data, incorporating technical indicators to capture market behavior. Developed a trading strategy using high-confidence predictions, achieving an <b>18% return</b> versus a <b>9% S&P 500</b> baseline. Final model classified movements as Up/Down/Flat with <b>62.5% accuracy</b> across <b>5,400+</b> model-driven trades; visualized trends with <b>Matplotlib</b> to evaluate performance over time.</p>
                         <div class="project-tech">
-                            <span class="tech-tag">React.js</span>
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">PostgreSQL</span>
-                            <span class="tech-tag">Tailwind CSS</span>
-                            <span class="tech-tag">JWT</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">Keras</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">Matplotlib</span>
                         </div>
-                        <div class="project-links">
-                            <a href="https://github.com/devsheth05" class="project-link"><i class="fab fa-github"></i> Code</a>
-                        </div>
+                        
                     </div>
                 </div>
 
@@ -225,14 +244,14 @@
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3>Hope Restored Inventory Tracking</h3>
-                        <p>A semester-long project working with a homeless shelter to digitize their inventory system. Built a comprehensive inventory management solution with real-time updates, QR scanning, and user-friendly interface to manage 500+ donated items.</p>
+                        <h3>Hope Restored Inventory Tracking Software</h3>
+                        <p>Built a user-friendly inventory management system supporting <b>300+</b> unhoused residents. Started from <b>Figma</b> mockups and built a <b>React.js</b> front-end (CoreUI) with <b>5+</b> interactive pages. Implemented a dynamic inventory table with filtering, searching, and manual input that updates in real time to manage <b>500+</b> donated items. Added <b>QR scanning</b> in a <b>Django</b>-based backend to efficiently add or remove items in the PostgreSQL database.</p>
                         <div class="project-tech">
-                            <span class="tech-tag">Vue.js</span>
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">PostgreSQL</span>
-                            <span class="tech-tag">Prisma</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">React.js</span>
+                            <span class="tech-tag">Python</span>
                             <span class="tech-tag">Django</span>
+                            <span class="tech-tag">PostgreSQL</span>
                         </div>
                     </div>
                 </div>
@@ -245,32 +264,13 @@
                     </div>
                     <div class="project-content">
                         <h3>Vib.IO (Spotif.ai)</h3>
-                        <p>A music recommendation system that analyzes user's Spotify data using audio feature extraction. Uses Librosa for audio analysis and provides personalized song recommendations based on musical characteristics and listening patterns.</p>
+                        <p>A music recommendation system analyzing Spotify listening data using audio feature extraction. Built personalized song suggestions based on musical characteristics and listening patterns, leveraging Python audio tooling and lightweight app frameworks.</p>
                         <div class="project-tech">
                             <span class="tech-tag">Python</span>
                             <span class="tech-tag">Librosa</span>
                             <span class="tech-tag">Gradio</span>
                             <span class="tech-tag">Streamlit</span>
                             <span class="tech-tag">Spotify API</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-placeholder">
-                            <i class="fas fa-chart-line"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>FinTrack (ACM Research)</h3>
-                        <p>Built and trained a hybrid CNN-LSTM model to predict S&P 500 movements using minute-level stock data. Achieved 62.5% accuracy across 5,400+ trades and generated 18% return compared to 9% S&P 500 baseline.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">TensorFlow</span>
-                            <span class="tech-tag">Keras</span>
-                            <span class="tech-tag">Pandas</span>
-                            <span class="tech-tag">Matplotlib</span>
                         </div>
                     </div>
                 </div>
@@ -302,7 +302,7 @@
             <h2 class="section-title">Skills & Technologies</h2>
             <div class="skills-content">
                 <div class="skills-category">
-                    <h3>Programming Languages</h3>
+                    <h3>Languages</h3>
                     <div class="skills-grid">
                         <div class="skill-item">
                             <i class="fab fa-java"></i>
@@ -347,16 +347,24 @@
                             <span>Node.js</span>
                         </div>
                         <div class="skill-item">
-                            <i class="fab fa-aws"></i>
-                            <span>AWS Lambda</span>
+                            <i class="fab fa-node-js"></i>
+                            <span>Express</span>
                         </div>
                         <div class="skill-item">
-                            <i class="fab fa-docker"></i>
-                            <span>Docker</span>
+                            <i class="fas fa-flask"></i>
+                            <span>Flask</span>
                         </div>
                         <div class="skill-item">
-                            <i class="fab fa-git-alt"></i>
-                            <span>Git</span>
+                            <i class="fas fa-code"></i>
+                            <span>Django</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-chart-bar"></i>
+                            <span>Pandas</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-brain"></i>
+                            <span>TensorFlow</span>
                         </div>
                         <div class="skill-item">
                             <i class="fab fa-bootstrap"></i>
@@ -370,12 +378,50 @@
                             <i class="fab fa-css3"></i>
                             <span>Bulma</span>
                         </div>
+                        <div class="skill-item">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Matplotlib</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-calculator"></i>
+                            <span>NumPy</span>
+                        </div>
+                        
                     </div>
                 </div>
 
                 <div class="skills-category">
-                    <h3>Tools & Technologies</h3>
+                    <h3>Tools & Platforms</h3>
                     <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fab fa-aws"></i>
+                            <span>AWS Tools</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub Enterprise</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-docker"></i>
+                            <span>Docker</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-cubes"></i>
+                            <span>Terraform</span>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <i class="fab fa-jenkins"></i>
+                            <span>Jenkins</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Datadog</span>
+                        </div>
                         <div class="skill-item">
                             <i class="fas fa-database"></i>
                             <span>PostgreSQL</span>
@@ -387,22 +433,6 @@
                         <div class="skill-item">
                             <i class="fas fa-pencil-ruler"></i>
                             <span>UI/UX Design</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-chart-bar"></i>
-                            <span>Pandas</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-chart-line"></i>
-                            <span>Matplotlib</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-calculator"></i>
-                            <span>NumPy</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-brain"></i>
-                            <span>TensorFlow</span>
                         </div>
                     </div>
                 </div>
@@ -469,8 +499,8 @@
             <div class="footer-content">
                 <p>&copy; 2024 Dev Sheth. All rights reserved.</p>
                 <div class="footer-social">
-                    <a href="https://github.com/devsheth05"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/devsheth22/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/devsheth05" aria-label="GitHub" title="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/in/devsheth22/" aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
                 </div>
             </div>
         </div>
