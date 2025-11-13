@@ -66,7 +66,7 @@
             <div class="hero-image">
                 <div class="profile-card">
                     <div class="profile-avatar">
-                        <img src="images\profile_1.jpeg" class="profile-pic" alt="Profile picture of Dev Sheth" />
+                        <img src="images/profile_1.jpeg" class="profile-pic" alt="Profile picture of Dev Sheth" />
                     </div>
                     <div class="profile-info">
                         <h3>Me</h3>
@@ -120,11 +120,11 @@
                         <p>Years Experience</p>
                     </div>
                     <div class="stat-item">
-                        <h3>6+</h3>
+                        <h3>7+</h3>
                         <p>Projects Completed</p>
                     </div>
                     <div class="stat-item">
-                        <h3>8+</h3>
+                        <h3>10+</h3>
                         <p>Technologies</p>
                     </div>
                 </div>
@@ -217,13 +217,44 @@
         <div class="container">
             <h2 class="section-title">Projects & Research</h2>
             <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-placeholder">
-                            <i class="fas fa-chart-line"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
+    <!-- NEW: TalkToToyota Project -->
+    <div class="project-card featured-project">
+        <div class="project-image">
+            <div class="project-placeholder">
+                <i class="fas fa-car"></i>
+            </div>
+            <div class="hackathon-badge">
+                <i class="fas fa-trophy"></i>
+                <span>HackUTD 2025</span>
+            </div>
+        </div>
+        <div class="project-content">
+            <h3>TalkToToyota 🏆</h3>
+            <p>Built an AI-powered virtual Toyota salesman in <b>under 24 hours</b> at HackUTD 2025. Integrates <b>fine-tuned Grok LLM</b> via OpenRouter API and <b>ElevenLabs audio synthesis</b> for real-time, voice-enabled car recommendations. Features interactive comparison dashboards, dynamic finance estimates, and personalized suggestions trained on Toyota specifications, pricing, and user preferences.</p>
+            <div class="project-tech">
+                <span class="tech-tag">Next.js</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">OpenRouter (Grok)</span>
+                <span class="tech-tag">ElevenLabs</span>
+                <span class="tech-tag">Tailwind CSS</span>
+                <span class="tech-tag">Full-Stack</span>
+            </div>
+            <div class="project-links">
+                <a href="https://talk-to-toyota.vercel.app/" target="_blank" rel="noopener" class="project-link">
+                    <i class="fas fa-external-link-alt"></i>
+                    Live Demo
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-card">
+        <div class="project-image">
+            <div class="project-placeholder">
+                <i class="fas fa-chart-line"></i>
+            </div>
+        </div>
+        <div class="project-content">
                         <h3>FinTrack (ACM Research)</h3>
                         <p>Built and trained a hybrid <b>CNN-LSTM</b> model in <b>TensorFlow</b> to predict S&P 500 movements using minute-level stock data, incorporating technical indicators to capture market behavior. Developed a trading strategy using high-confidence predictions, achieving an <b>18% return</b> versus a <b>9% S&P 500</b> baseline. Final model classified movements as Up/Down/Flat with <b>62.5% accuracy</b> across <b>5,400+</b> model-driven trades; visualized trends with <b>Matplotlib</b> to evaluate performance over time.</p>
                         <div class="project-tech">
@@ -341,6 +372,10 @@
                         <div class="skill-item">
                             <i class="fab fa-vuejs"></i>
                             <span>Vue.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-node-js"></i>
+                            <span>Next.js</span>
                         </div>
                         <div class="skill-item">
                             <i class="fab fa-node-js"></i>

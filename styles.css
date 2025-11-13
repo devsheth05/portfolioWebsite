@@ -1092,3 +1092,85 @@ html {
 .experience-content {
     text-align: center;
 } 
+/* Featured Project & Hackathon Styles */
+.featured-project {
+    border: 2px solid var(--primary-color);
+    background: linear-gradient(135deg, rgba(46, 196, 182, 0.05), rgba(46, 196, 182, 0.02));
+    position: relative;
+    overflow: visible;
+}
+
+:root.dark .featured-project {
+    border-color: #22d3ee;
+    background: linear-gradient(135deg, rgba(34, 211, 238, 0.1), rgba(34, 211, 238, 0.05));
+}
+
+.featured-project::before {
+    content: '⭐ Featured';
+    position: absolute;
+    top: -12px;
+    right: 20px;
+    background: linear-gradient(135deg, #fbbf24, #f59e0b);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 8px rgba(251, 191, 36, 0.4);
+    z-index: 10;
+}
+
+.featured-project:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 25px 50px rgba(46, 196, 182, 0.25);
+}
+
+.hackathon-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: rgba(239, 68, 68, 0.95);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(239, 68, 68, 0.4);
+    z-index: 5;
+}
+
+:root.dark .hackathon-badge {
+    background: rgba(239, 68, 68, 0.9);
+}
+
+.hackathon-badge i {
+    font-size: 1rem;
+    animation: trophy-pulse 2s ease-in-out infinite;
+}
+
+@keyframes trophy-pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+.featured-project .project-placeholder i {
+    color: var(--primary-color);
+    animation: car-drive 3s ease-in-out infinite;
+}
+
+@keyframes car-drive {
+    0%, 100% {
+        transform: translateX(-10px);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+}
